@@ -17,7 +17,6 @@ public class LoginPrac1SD {
 	public void user_opens_the_login_site_describes_the_initial_state() throws InterruptedException {
 	    WebDriverManager.chromedriver().setup();
 	    driver = new ChromeDriver();
-	    driver.manage().window().maximize();
 	    driver.get("https://www.shoppersstack.com/user-signin");
 	    Thread.sleep(5000);
 	}
