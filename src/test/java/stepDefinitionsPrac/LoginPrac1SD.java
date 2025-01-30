@@ -24,7 +24,8 @@ public class LoginPrac1SD {
 	@When("user enters the valid {string} and {string} # describes the action")
 	public void user_enters_the_valid_and_describes_the_action(String string, String string2) {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-	    driver.findElement(By.id("Email")).sendKeys(string);
+		driver.manage().window().maximize();
+		driver.findElement(By.id("Email")).sendKeys(string);
 	    driver.findElement(By.id("Password")).sendKeys(string2);
 	}
 	
